@@ -1,5 +1,6 @@
-# AV-SepFormer: Cross-Attention SepFormer for Audio-Visual Target Speaker Extraction #
+# AV-SepFormer #
 
-The code will be released after acceptance.
+This Git repository for the official PyTorch implementation of "AV-SepFormer: Cross-attention SepFormer for Audio-Visual Target Speaker Extraction", accepted by ICASSP 2023.
 
+## Requirements ##
 Demo page: https://lin9x.github.io/AV-SepFormer_demo/
