@@ -55,4 +55,4 @@ If you want to train other audio-visual speech separation systems, **AV-ConvTasN
 
 
 # References
-The data preparation follow the operation in [MuSE](https://arxiv.org/abs/2010.07775) Github Repository.
+The data preparation follows the operation in [MuSE](https://arxiv.org/abs/2010.07775) Github Repository.
