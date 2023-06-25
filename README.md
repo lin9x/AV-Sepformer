@@ -38,7 +38,7 @@ cd AV-Sepformer
 ```
 
 ### Data preparation
-Scripts to preprocess the voxceleb2 datasets is the same as which in MuSE. You can dirct go to this repo to preprocess your data.
+Scripts to preprocess the voxceleb2 datasets is the same as which in MuSE. You can dirctly go to this [repository](https://github.com/zexupan/MuSE) to preprocess your data.
 Pairs of our data is in data_list
 
 ## Training
@@ -52,3 +52,7 @@ CUDA_VISIBILE_DEVISIBLE=0,1 python3 run_avsepformer.py run config/avsepformer.ya
 ```
 
 If you want to train other audio-visual speech separation systems, AV-ConvTasNet and MuSE is available in our repo. Just turn to the run_[system].py and config/[system].yaml to train your own model.
+
+
+# References
+The data preparation follow the operation in [MuSE](https://arxiv.org/abs/2010.07775) Github Repository.
