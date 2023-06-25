@@ -9,9 +9,46 @@ This Git repository for the official PyTorch implementation of ""**"[AV-SepForme
 
   - Linux
   
-  - python >= 3.6
+  - python >= 3.8
 
   - Anaconda or Miniconda
 
   - NVIDIA GPU + CUDA CuDNN (CPU can also be supported)
 
+
+## Environment && Installation
+
+Install Anaconda or Miniconda, and then install conda and pip packages:
+
+```shell
+# Create conda environment
+conda create --name av_sep python=3.8
+conda activate av_sep
+
+# Install required packages
+pip install -r requiremens.txt
+```
+
+## Start Up
+Clone the repository:
+
+```shell
+git clone https://github.com/lin9x/AV-Sepformer.git
+cd AV-Sepformer
+```
+
+### Data preparation
+Scripts to preprocess the voxceleb2 datasets is the same as which in MuSE. You can dirct go to this repo to preprocess your data.
+Pairs of our data is in data_list
+
+## Training
+First, you need to moodify the various configurations in config/avsepformer.yaml for training.
+
+Then you can run training:
+
+```shell
+source activate av_sep
+CUDA_VISIBILE_DEVISIBLE=0,1 python3 run_avsepformer.py run config/avsepformer.yaml
+```
+
+If you want to train other audio-visual speech separation systems, AV-ConvTasNet and MuSE is available in our repo. Just turn to the run_[system].py and config/[system].yaml to train your own model.
